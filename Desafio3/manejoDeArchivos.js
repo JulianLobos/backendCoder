@@ -74,22 +74,3 @@ class Contenedor{
 const productList = new Contenedor('./products.txt');
 
 module.exports = {Contenedor};
-
-// productList.save({Title: 'Pijama', Price: '4500'})
-
-
-
-// CONSEGUIR PRODUCTO POR ID:
-
-// const getElementFunction = async () => {
-//     console.log(await productList.getById(2))
-// }
-// getElementFunction();
-
-// CONSEGUIR TODOS LOS PRODUCTOS: 
-
-// const getAllElementsFunction = async () => {
-//     console.log(await productList.getAll())
-// }
-
-// getAllElementsFunction()
