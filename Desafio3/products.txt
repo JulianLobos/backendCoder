@@ -1,0 +1,37 @@
+[
+  {
+    "Title": "Cinturon",
+    "Price": "1750",
+    "id": 1
+  },
+  {
+    "Title": "Remera",
+    "Price": "2500",
+    "id": 2
+  },
+  {
+    "Title": "Medias",
+    "Price": "1250",
+    "id": 3
+  },
+  {
+    "Title": "Pantalón",
+    "Price": "4500",
+    "id": 4
+  },
+  {
+    "Title": "Zapatillas",
+    "Price": "14500",
+    "id": 5
+  },
+  {
+    "Title": "Buzo",
+    "Price": "6000",
+    "id": 6
+  },
+  {
+    "Title": "Pijama",
+    "Price": "4500",
+    "id": 7
+  }
+]
