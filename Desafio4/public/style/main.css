@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: 'Archivo', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.addProducts{
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer{
+    width: 34rem;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 15px;
+    padding: 2rem;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+
+.formContainer:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: scale(1);
+}
+
+input{
+    margin: 0.5rem 0;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0.25rem;
+    background-color: rgb(218, 216, 216);
+}
+
+.formBtn{
+    background-color: #3f50b5;
+    color: white;
+    transition: all 0.3s ease;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1rem;
+}
+
+.formBtn:hover{
+    background-color: #002884;
+}
