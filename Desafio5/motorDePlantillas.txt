@@ -1,0 +1,4 @@
+De los 3 motores de plantillas prefiero pug, porque se puede usar JS y porque simplifica muchísimo el html, a diferencia de ejs que al menos a mi se me dificulta para leerlo cuando hay muchos tags anidados por ejemplo.. 
+pug se me hace más rápido de escribirlo y mas cuando uso frameworks como bootstrap.
+También los layouts se pueden agregar de una forma muy cómoda y rápida.
+El segundo que prefiero es hbs porque me resulta facil de implementar los condicionales, pero bueno al poder usar JS en pug, es aún más fácil.

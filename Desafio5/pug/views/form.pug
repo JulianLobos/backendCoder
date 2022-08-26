@@ -1,0 +1,14 @@
+include ./layout.pug 
+
+div.container
+    h1.text-center.mb-4 Agregar Productos
+
+    form.d-flex.flex-column.align-items-center.justify-content-center(action='/productos' method='POST')
+        input.mb-3.w-50.p-3(required type='text' placeholder='Título del producto' name='nombre')
+        input.mb-3.w-50.p-3(required type='text' placeholder='Precio del producto' name='precio')
+        input.mb-3.w-50.p-3(required type='text' placeholder='Imagen del producto' name='url')
+        input.mb-3.w-50.p-3.btn.btn-primary(type='submit' value='Agregar')
+    
+    a.d-flex.align-items-center.justify-content-center(href='./listaproductos')
+        button.btn.btn-success(type='button') Ver lista de productos
+

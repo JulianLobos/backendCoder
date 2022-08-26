@@ -1,0 +1,29 @@
+include ./layout.pug
+
+div.container
+    h1.text-center.mb-4 Lista de productos
+    if products.length===0
+        h5.text-center No se encontraron productos..
+    else
+        div.d-flex.align-items-center.justify-content-center.border-bottom
+            div.container.row
+                div.col 
+                    p Nombre
+                div.col 
+                    p Precio
+                dv.col 
+                    p Imagen
+        
+        each product in products 
+            div.container.border-bottom
+                div.row 
+                    div.col.d-flex.align-items-center
+                        p= product.nombre
+                    div.col.d-flex.align-items-center
+                        p= product.precio
+                    div.col.d-flex.align-items-center
+                        img.img-thumbnail(src=product.url alt=product.name)
+        a.d-flex.align-items-center.justify-content-center(href='./productos')
+            button.btn.btn-success.m-3(type='button') Agregar Productos
+
+
