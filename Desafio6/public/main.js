@@ -17,6 +17,7 @@ socket.on('all_products', products => {
     document.getElementById('list').innerHTML = ''
     products.forEach(producto => {
         document.getElementById('list').innerHTML += `
+        <div class="row">
             <div class="col d-flex align-items-center">
             <p>${producto.nombre}</p>
             </div>
@@ -24,8 +25,9 @@ socket.on('all_products', products => {
             <p>${producto.precio}</p>
             </div>
             <div class="col d-flex align-items-center">
-            <img class="img-thumbnail" src="${producto.url}" alt="${producto.nombre}">
+            <img class="img-thumbnail" src="${producto.url}" alt="${producto.nombre}" style="width: 100px">
             </div>
+        </div>
         `
     })
 

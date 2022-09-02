@@ -30,6 +30,7 @@ app.get('/productos', (req, res) => {
 
 io.on('connection', async (socket) => {
     console.log('Usuario nuevo conectado');
+    
     socket.emit('all_products', products)
 
     socket.on('add_product', async data => {

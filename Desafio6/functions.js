@@ -5,7 +5,7 @@ const addProduct = async (data) => {
         const response = await fetch('http://localhost:8080/api/productos', {
             method: 'POST', 
             body: JSON.stringify(data),
-            headers: { 'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json' },
         })
         const result = await response.json()
         return result

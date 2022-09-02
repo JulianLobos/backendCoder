@@ -33,23 +33,23 @@ router.get('/productos', (req, res) => {
     res.render('form');
 })
 
-router.get('/', (req, res) => {
-    res.render('productos', { products });
-})
+// router.get('/', (req, res) => {
+//     res.render('productos', { products });
+// })
 
 router.get('/listaproductos', (req, res) => {
     res.render('productos', { products });
 })
 
-router.post('/productos', (req, res) => {
+router.post('/', (req, res) => {
     const id = getMaxId() + 1;
-    const { productTitle, productPrice, productImg } = req.body;
+    const { nombre, precio, url } = req.body;
     //products.push({ nombre, precio, url, id });
-    const data = {productTitle, productPrice, productImg, id}
-    if (!productTitle || !productPrice || !productImg) {
-        res.status(400).json({ error: 'por favor ingrese todos los datos' })
+    const data = {nombre, precio, url, id}
+    if (!nombre || !precio || !url) {
+        res.status(400).json({ error: 'por favor ingrese todos los datos' })        
     } else {
-        const data = { productTitle, productPrice, productImg, id }
+        const data = { nombre, precio, url, id }
         products.push(data)
         res.send(data)
     }
