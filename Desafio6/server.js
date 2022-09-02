@@ -3,7 +3,7 @@ import { Server as HTTPServer } from 'http';
 import { Server as IOServer } from 'socket.io';
 import { engine } from 'express-handlebars';
 import { router, products } from './routes/productos.js';
-import { addProduct } from './functions.js';
+import { addProduct, leerChat, enviarChat } from './functions.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -30,13 +30,21 @@ app.get('/productos', (req, res) => {
 
 io.on('connection', async (socket) => {
     console.log('Usuario nuevo conectado');
-    
+
     socket.emit('all_products', products)
 
     socket.on('add_product', async data => {
         await addProduct(data)
         io.sockets.emit('all_products', products)
     });
+
+    const chatBody = await leerChat();
+    socket.emit('all_messages', chatBody);
+
+    socket.on('new_message', async data => {
+        await enviarChat(data)
+        io.sockets.emit('all_messages', await leerChat())
+      })
     
 })
 

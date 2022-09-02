@@ -12,13 +12,13 @@
     <h1 class="text-center mb-4">Lista de productos</h1>
         <div class="d-flex align-items-center justify-content-center border-bottom">
             <div class="container row">
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                     Nombre
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                     Precio
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                     Imagen
                 </div>
             </div>
@@ -33,4 +33,13 @@
     <a class="d-flex align-items-center justify-content-center" href="./productos">
     </a>
 </div>
+
+<div class="container m-3 d-flex flex-column align-items-center justify-content-center">
+    <h2 class="text-center">Chat</h2>
+    <div class="container m-3 d-flex flex-column align-items-center justify-content-center" id="chat"></div>
+    <input class="mb-3 w-50 p-3" type="email" id="emailInput" placeholder="Tu Email" name="emailInput" required>
+    <textarea class="mb-3 w-50 p-3 required" id="mensaje" placeholder="Tu Mensaje"></textarea>
+    <button type='button' class='btn btn-primary mb-3 w-50 p-3' id="enviar">Enviar</button>
+</div>
+
 <script src="main.js"></script>

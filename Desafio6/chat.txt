@@ -1,0 +1,27 @@
+[
+  {
+    "email": "Julian@gmail.com",
+    "fecha": "2/9/2022 18:38:53",
+    "mensaje": "Hola"
+  },
+  {
+    "email": "rocio@gmail.com",
+    "fecha": "2/9/2022 18:39:10",
+    "mensaje": "Hola, que tal?"
+  },
+  {
+    "email": "Lobitto@gmail.com",
+    "fecha": "2/9/2022 18:42:29",
+    "mensaje": "Holas"
+  },
+  {
+    "email": "julianign@gmail.com",
+    "fecha": "2/9/2022 18:44:55",
+    "mensaje": "Holas\n"
+  },
+  {
+    "email": "julianign@gmail.com",
+    "fecha": "2/9/2022 18:46:19",
+    "mensaje": "sadñgsañdg"
+  }
+]
